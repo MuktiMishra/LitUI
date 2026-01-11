@@ -1,36 +1,16 @@
-# ⚡ LitUI
+# React + Vite
 
-## 📖 Introduction
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-**LitUI** is an animation-first React component library focused on building **rich, modern, and interactive UI components**. From animated forms to shimmer text and motion-enhanced cards, LitUI helps you drop in delightful, production-ready components with minimal setup.
+Currently, two official plugins are available:
 
-Perfect for developers who care about UI, detail, and micro-interactions.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🛠️ Technologies Used
+## React Compiler
 
-- Next.js  
-- TypeScript  
-- Tailwind CSS  
-- shadcn/ui  
-- Framer Motion  
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🌟 Highlights
+## Expanding the ESLint configuration
 
-- Fully animated components (forms, OTP inputs, shimmers, cards)  
-- Theme-aware and dark-mode compatible  
-- Built for performance and visual delight  
-- Developer-friendly and customizable  
-
-## 🧪 Note
-
-LitUI isn’t a community-driven project — it's more like a personal lab where I explore UI, animation, and motion design in React.  
-Everything you see is built with the intent to learn, refine, and share what excites me in the frontend space.  
-
-## 📜 License
-
-Copyright (c) 2026 Mukti Mishra  
-All rights reserved.
-
-This repository is publicly available for learning and portfolio purposes only.  
-You may not copy, modify, distribute, or use this code, in whole or in part,  
-for any purpose — commercial or non-commercial — without prior written consent from the author.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
