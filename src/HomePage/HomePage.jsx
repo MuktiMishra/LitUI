@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, Code2, Zap, Heart, Copy, Check, Github, Linkedin, Twitter } from 'lucide-react';
 import Header from './Header';
-
+import { Link } from 'react-router-dom'; 
 export default function Homepage() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [copied, setCopied] = useState(false);
@@ -85,10 +85,16 @@ export default function Homepage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl font-medium text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
+            {/* <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl font-medium text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
               <span className="relative z-10">Read Documentation</span>
               <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </button>
+            </button> */}
+            <Link to="/docs">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl font-medium text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
+                  <span className="relative z-10">Read Documentation</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </button>
+            </Link>
             
             <button className="group px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl font-medium text-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:border-purple-400/50">
               <span className="flex items-center gap-2">
