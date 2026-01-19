@@ -18,7 +18,7 @@ A beautifully designed, modern **React component library** with a feminine, play
 ## 🚀 Demo
 
 Check out the **live demo** of LitUI components:  
-[🔗 Demo](https://your-demo-link.com)
+[🔗 Demo](https://lit-ui-bymukti.vercel.app/)
 
 ---
 
